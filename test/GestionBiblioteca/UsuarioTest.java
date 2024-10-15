@@ -50,8 +50,6 @@ public class UsuarioTest {
         Usuario usuario = new Usuario();
         Libro libro = new Libro("El Principito");
         usuario.addPrestamo(libro);
-
-        // Simula que el préstamo se realizó hace 10 días
         libro.setFechaPrestamo(LocalDate.now().minusDays(10));
         assertTrue(usuario.tieneRetrasos());
     }
@@ -61,8 +59,6 @@ public class UsuarioTest {
         Usuario usuario = new Usuario();
         Libro libro = new Libro("El Principito");
         usuario.addPrestamo(libro);
-
-        // Simula que el préstamo se realizó hace 5 días
         libro.setFechaPrestamo(LocalDate.now().minusDays(5));
 
         assertFalse(usuario.tieneRetrasos());

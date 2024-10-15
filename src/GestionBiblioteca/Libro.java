@@ -14,17 +14,14 @@ public class Libro {
 		this.fechaPrestamo = null;
 	}
 
-	// Getter para el título
 	public String getTitulo() {
 		return titulo;
 	}
 
-	// Método para verificar si el libro está prestado
 	public boolean isPrestado() {
 		return prestado;
 	}
 
-	// Método para establecer el estado de préstamo
 	public void setPrestado(boolean prestado) {
 		this.prestado = prestado;
 		if (prestado) {
@@ -34,12 +31,10 @@ public class Libro {
 		}
 	}
 
-	// Getter para la fecha de préstamo
 	public LocalDate getFechaPrestamo() {
 		return fechaPrestamo;
 	}
 
-	// Setter para la fecha de préstamo (para propósitos de prueba)
 	public void setFechaPrestamo(LocalDate fechaPrestamo) {
 		this.fechaPrestamo = fechaPrestamo;
 	}

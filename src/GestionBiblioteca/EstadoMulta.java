@@ -4,3 +4,4 @@ public enum EstadoMulta {
 	PAGADA,
 	NO_PAGADA;
 }
+

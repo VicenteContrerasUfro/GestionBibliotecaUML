@@ -21,3 +21,4 @@ public class Categoria {
 		throw new UnsupportedOperationException();
 	}
 }
+
